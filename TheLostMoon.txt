@@ -5,7 +5,7 @@
 Hey There!
 <p>You can see that, this is not completed</p>
 <p>So enjoy what I have finished so far</p> 
-<p>Home<a href="/pages/home.html"> game</a>.</p>
+<p><a href="/pages/home.html">Home</a>.</p>
 <p>I hope everything works properly <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.
 <p> You can give links to other professional profiles you have on Internet, here: <br> 
   <a href="link1">Profile1</a> <br> 
