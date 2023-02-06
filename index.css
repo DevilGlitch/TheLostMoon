@@ -22,13 +22,11 @@ a {
 }
 
 #a {
-	<--! color: #0f0; !-->
 	color: #ff0000;
 }
 
 #c {
-	<--! color: #0bc; !-->
-	color: #cc0099;
+	color: #0bc;
 }
 
 #b {
