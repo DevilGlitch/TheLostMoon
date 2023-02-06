@@ -1,6 +1,6 @@
 <span id="a">TheLostMoon@DevilGlitch</span>:<span id="b">~</span><span id="c">$</span> cd TheLostMoon/root
 <span id="a">TheLostMoon@DevilGlitch</span>:<span id="b">~</span><span id="c">$</span> cat TheLostMoon.txt<br/><br/>
-"<span id="k">Welcome to my little Oasis of the Internet</span>".
+<span id="k">Welcome to my little Oasis of the Internet</span>
 
 Hey There!
 <p>You can see that, this is not completed</p>
