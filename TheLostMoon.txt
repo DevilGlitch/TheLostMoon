@@ -8,9 +8,9 @@ Hey There!
 <p><a href="/pages/home.html">Home</a>.</p>
 <p>I hope everything works properly <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.
 <p> You can give links to other professional profiles you have on Internet, here: <br> 
-  <a href="link1">Profile1</a> <br> 
-  <a href="link2">Profile2</a> and <br> 
-  <a href="link3">Profile3</a>.</p>
+  <a href="https://github.com/DevilGlitch">See What I'm Working On</a> <br> 
+  <a href="https://thelostmoon.carrd.co/#two">Socials && Commissions</a> and <br> 
+  <a href="https://discord.gg/Q873rEpFQp">My main discord server</a>.</p>
 
 You can also feel free to send me an <a href="mailto:TheLostMoonXVIII@outlook.com">email</a>
 
