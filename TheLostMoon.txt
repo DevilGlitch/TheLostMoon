@@ -10,9 +10,6 @@ Hey There!
   <br>
   <br>
   <br>
-Give your project links or something like that. <a href="link"> Here you go</a>.
-<p> You can give links to other professional profiles you have on Internet, here: 
-  <br>
   <a href="https://github.com/DevilGlitch">See What I'm Working On</a> 
   <br> 
   <a href="https://thelostmoon.carrd.co/#two">Socials && Commissions</a> 
