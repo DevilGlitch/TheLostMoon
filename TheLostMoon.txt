@@ -4,9 +4,6 @@
 
 Hey There!
 <p>You can see that, this is not completed</p>
-<p>So enjoy what I have finished so far</p> 
-<p><a href="/pages/home.html">Home</a>.</p>
-<p>I hope everything works properly 
   <br>
   <br>
   <br>
@@ -14,8 +11,8 @@ Hey There!
   <br> 
   <a href="https://thelostmoon.carrd.co/#two">Socials && Commissions</a> 
   <br> 
-  <a href="https://discord.gg/Q873rEpFQp">My main discord server</a>.</p><br>
+  <a href="https://discord.gg/Zgg9rMvhnS">My main discord server</a>.</p><br>
 
-You can also feel free to send me an <a href="mailto:TheLostMoonXVIII@outlook.com">email</a>
+You can also feel free to send me an <a href="mailto:support@thelostmoon.net">email</a>
 
 <p>Thxxx!</p>
