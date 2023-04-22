@@ -1,2 +1,1 @@
-# ADevilOwnsAWebsite.GoneWrong.3AM.vibes.exe.html.java.SomeReallyLongName.school.edu
-Ok so this is my attempt at making an unblocking website idk how well its going to go...
+# TheLostMoon
