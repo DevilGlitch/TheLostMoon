@@ -23,3 +23,19 @@
   z-index: 99999;
   color: #d8d4cf;
 }
+
+.coming-soon-popup {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  background-color: #1d2022;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  z-index: 99998;
+  color: #d8d4cf;
+}
