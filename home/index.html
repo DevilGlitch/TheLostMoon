@@ -1,80 +1,48 @@
-<html> 
-  <head> 
-    <title>The Lost Moon - Coming Soon</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="The official website for TheLostMoon">
-    <meta name="keywords" content="">
-    <meta name="author" content="TheLostMoon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="icon.svg">
-    <!--<link rel="stylesheet" type="text/css" href="index.css">-->
-  <style>
-    .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-    .admin-login {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 14px;
-    }
-    .admin-login input[type=password] {
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-    .admin-login input[type=submit] {
-      background-color: #007bff;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-    .disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-  </style>
+<html>
+
+<head>
+  <title>The Lost Moon - Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The home page for TheLostMoon, find short descriptions on all sorts of projects and things related to Yuri! The site includes TheLostMoonXVIII and related Youtube and Twitch; ReturnToAsh.mp3 and related music demos; DevilGlitch and related GitHub Projects.">
+  <meta name="keywords" content="">
+  <meta name="author" content="TheLostMoon, DevilGlitch, Yuri, ReturnToAsh.mp3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../visualAssets/Logo.png">
+  <link rel="stylesheet" type="text/css" href="../css/bcontent.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
+
 <body>
 
-<div class="popup">
-  <h1>Coming Soon</h1>
-  <p>We are working hard to bring you an awesome website. Stay tuned!</p>
-</div>
+  <div class="popup">
+    <h1>Coming Soon</h1>
+    <p>We are working hard to bring you an awesome website. Stay tuned!</p>
+  </div>
 
-<div class="admin-login">
-  <form id="admin-login-form">
-    <label for="admin-password">Admin Password: </label>
-    <input type="password" name="admin-password" id="admin-password">
-    <input type="submit" value="Login">
-  </form>
-</div>
+  <div class="admin-login">
+    <form id="admin-login-form">
+      <label for="admin-password">Admin Password: </label>
+      <input type="password" name="admin-password" id="admin-password">
+      <input type="submit" value="Login">
+    </form>
+  </div>
 
-<script>
-  const adminLoginForm = document.getElementById('admin-login-form');
-  const popup = document.querySelector('.popup');
-  const body = document.querySelector('body');
-
-  adminLoginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const password = e.target.adminPassword.value;
-    if (password === '#cook1es!') {
-      body.classList.remove('disabled');
-      popup.style.display = 'none';
-    } else {
-      alert('Invalid password. Please try again.');
-    }
-  });
-</script>
+  <script src="/bContent.js"></script>
 </body>
+
+<footer>
+  <p>Copyright © 2020 - 2023 TheLostMoon. All Rights Reserved.<br>
+    <br>
+    All content on this website, including text, images, graphics, audio files, and video files, is the property of The Lost Moon and is protected by international copyright laws. Unauthorized use, reproduction, distribution, or modification of any content on this website is strictly prohibited.<br>
+    <br>
+    The Lost Moon is not responsible for the content or availability of any external websites linked to or from this website. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them. The Lost Moon shall not be liable for any damages or losses arising from the use of or reliance on any external websites linked to or from this website.<br>
+    <br>
+    The Lost Moon reserves the right to take legal action against any individual or entity that violates these copyright terms. By accessing this website, you acknowledge and agree to abide by these copyright terms.<br>
+    <br>
+    If you have any questions about our copyright notice, please contact us at <a href="mailto:support@thelostmoon.net">support@thelostmoon.net</a><br>
+    <br>
+    Thank you for visiting https://thelostmoon.net.<br></p>
+</footer>
+
+
 </html>
