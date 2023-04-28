@@ -1,59 +1,25 @@
 .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 9999;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-    .admin-login {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 14px;
-    }
-    .admin-login input[type=password] {
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-    .admin-login input[type=submit] {
-      background-color: #007bff;
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-    .disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-    .coming-soon-popup {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 9999;
-    }
-    
-    .popup-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      max-width: 90%;
-      max-height: 90%;
-      overflow-y: auto;
-      z-index: 99999;
-    }
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  z-index: 99999;
+  color: #fff;
+}
