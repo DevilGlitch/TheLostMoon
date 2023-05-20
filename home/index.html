@@ -17,7 +17,6 @@
   <meta content="https://thelostmoon.net/visualAssets/logo.png" property="og:image" />
   <meta content="#da004e" data-react-helmet="true" name="theme-color" />
   <link rel="icon" type="image/x-icon" href="../visualAssets/fav.ico">
-  <link rel="stylesheet" href="../css/main.css">
   <style>
     @keyframes fade-in {
       0% {
@@ -27,26 +26,107 @@
         opacity: 1;
       }
     }
-    .loading {
+
+    body {
+      margin: 0;
+      background-color: #0d1117;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    #loading {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #0d1117;
-    }
-    .ascii-art {
-      color: #fff;
       animation: fade-in 2s ease-in-out;
     }
+
+    .ascii-art {
+      text-align: center;
+    }
+
     #main {
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
+
+    #main.show {
+      opacity: 1;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #1f6feb;
+    }
+
+    nav ul li {
+      padding: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      margin: 10px;
+    }
+
+    footer {
+      background-color: #1f6feb;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
   </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      // Get the loading element
+      var loadingElement = document.getElementById('loading');
+
+      // Hide the loading element and show the main content
+      function showContent() {
+        var mainElement = document.getElementById('main');
+        loadingElement.style.display = 'none';
+        mainElement.classList.add('show');
+      }
+
+      // After a delay, fade out the loading element and show the main content
+      setTimeout(function () {
+        loadingElement.style.opacity = 0;
+        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
+      }, 2000);
+    });
+  </script>
 </head>
 
 <body>
-  <div id="loading" class="loading">
+  <div id="loading">
     <div class="loading-text">
       <pre class="ascii-art">
  _____ _          __        _______ _     _____
@@ -100,27 +180,6 @@
       <p>&copy; 2023 Your Company. All rights reserved.</p>
     </footer>
   </div>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      // Get the loading element
-      var loadingElement = document.getElementById('loading');
-
-      // Hide the loading element and show the main content
-      function showContent() {
-        var mainElement = document.getElementById('main');
-        loadingElement.style.display = 'none';
-        mainElement.style.opacity = 1;
-      }
-
-      // After a delay, fade out the loading element and show the main content
-      setTimeout(function () {
-        loadingElement.style.opacity = 0;
-        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
-      }, 2000);
-    });
-  </script>
-
 </body>
 
 </html>
