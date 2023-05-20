@@ -1,88 +1,90 @@
 @keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+  0% {
+    opacity: 0;
+  }
 
-    body {
-      margin: 0;
-      background-color: #0d1117;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
+  100% {
+    opacity: 1;
+  }
+}
 
-    #loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      animation: fade-in 2s ease-in-out;
-    }
+body {
+  margin: 0;
+  background-color: #0d1117;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
 
-    .ascii-art {
-      text-align: center;
-    }
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fade-in 2s ease-in-out;
+}
 
-    #main {
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
+.ascii-art {
+  text-align: center;
+}
 
-    #main.show {
-      opacity: 1;
-    }
+#main {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-    header {
-      padding: 20px;
-      text-align: center;
-    }
+#main.show {
+  opacity: 1;
+}
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      background-color: #da004e;
-    }
+header {
+  padding: 20px;
+  text-align: center;
+}
 
-    nav ul li {
-      padding: 10px;
-    }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #da004e;
+}
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
+nav ul li {
+  padding: 10px;
+}
 
-    main {
-      padding: 20px;
-    }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
-    .quote {
-      font-style: italic;
-      margin: 20px 0;
-    }
+main {
+  padding: 20px;
+}
 
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-    }
+.quote {
+  font-style: italic;
+  margin: 20px 0;
+}
 
-    .image-gallery img {
-      width: 200px;
-      margin: 10px;
-    }
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    footer {
-      background-color: #da004e;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-    }
-      .footrt a {
-      color: #000000;           
+.image-gallery img {
+  width: 200px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #da004e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footrt a {
+  color: #000000;
 }
