@@ -18,26 +18,31 @@
   <meta content="#da004e" data-react-helmet="true" name="theme-color" />
   <link rel="icon" type="image/x-icon" href="../visualAssets/fav.ico">
   <link rel="stylesheet" href="../css/main.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      // Get the loading element
-      var loadingElement = document.getElementById('loading');
-
-      // Hide the loading element and show the main content
-      function showContent() {
-        var mainElement = document.getElementById('main');
-        loadingElement.style.display = 'none';
-        mainElement.style.opacity = 1;
+  <style>
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
       }
-
-      // After a delay, fade out the loading element and show the main content
-      setTimeout(function() {
-        loadingElement.style.opacity = 0;
-        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
-      }, 2000);
-    });
-  </script>
+      100% {
+        opacity: 1;
+      }
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0d1117;
+    }
+    .ascii-art {
+      color: #fff;
+      animation: fade-in 2s ease-in-out;
+    }
+    #main {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+  </style>
 </head>
 
 <body>
@@ -96,27 +101,25 @@
     </footer>
   </div>
 
-  <footer>
-    <p>Copyright © 2020 - 2023 TheLostMoon. All Rights Reserved.<br>
-      <br>
-      All content on this website, including text, images, graphics, audio files, and video files, is the property of
-      TheLostMoon and is protected by international copyright laws. Unauthorized use, reproduction, distribution, or
-      modification of any content on this website is strictly prohibited.<br>
-      <br>
-      TheLostMoon is not responsible for the content or availability of any external websites linked to or from this
-      website. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed
-      within them. TheLostMoon shall not be liable for any damages or losses arising from the use of or reliance on
-      any external websites linked to or from this website.<br>
-      <br>
-      TheLostMoon reserves the right to take legal action against any individual or entity that violates these
-      copyright terms. By accessing this website, you acknowledge and agree to abide by these copyright terms.<br>
-      <br>
-      If you have any questions about our copyright notice, please contact us at <a
-        href="mailto:support@thelostmoon.net">support@thelostmoon.net</a><br>
-      <br>
-      Thank you for visiting https://thelostmoon.net.<br>
-    </p>
-  </footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      // Get the loading element
+      var loadingElement = document.getElementById('loading');
+
+      // Hide the loading element and show the main content
+      function showContent() {
+        var mainElement = document.getElementById('main');
+        loadingElement.style.display = 'none';
+        mainElement.style.opacity = 1;
+      }
+
+      // After a delay, fade out the loading element and show the main content
+      setTimeout(function () {
+        loadingElement.style.opacity = 0;
+        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
+      }, 2000);
+    });
+  </script>
 
 </body>
 
