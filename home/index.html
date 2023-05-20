@@ -17,89 +17,85 @@
   <meta content="https://thelostmoon.net/visualAssets/logo.png" property="og:image" />
   <meta content="#da004e" data-react-helmet="true" name="theme-color" />
   <link rel="icon" type="image/x-icon" href="../visualAssets/fav.ico">
-  <link rel="stylesheet" href="../css/bcontent.css">
   <link rel="stylesheet" href="../css/main.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
- <style>
-    /* Style for popup overlay */
-    #coming-soon-popup {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(#b91a37, #000000);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Style for popup content */
-    #popup-content {
-      position: absolute;
-	    top: 50%;
-  	  left: 50%;
-    	width: 400px;
-	    padding: 40px;
-	    transform: translate(-50%, -50%);
-	    background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-    	box-sizing: border-box;
-    	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    	border-radius: 10px;
-    }
-  </style>
 </head>
-<body onload="myFunction()">
-  <div class="coming-soon-popup" id="popup">
-    <div class="popup-content">
-      <h2>Coming Soon!</h2>
-      <p>Our website is under construction. Check back soon!</p>
-      <form class="admin-login-form" method="post" action="#" onsubmit="checkPassword(); return false;">
-        <label for="password">Admin Password:</label>
-        <input type="password" id="password" name="password" />
-        <button type="submit">Login</button>
-      </form>      
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      // Get the loading element
+      var loadingElement = document.getElementById('loading');
+
+      // Hide the loading element and show the main content
+      function showContent() {
+        var mainElement = document.getElementById('main');
+        loadingElement.style.display = 'none';
+        mainElement.style.opacity = 1;
+      }
+
+      // After a delay, fade out the loading element and show the main content
+      setTimeout(function() {
+        loadingElement.style.opacity = 0;
+        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
+      }, 2000);
+    });
+  </script>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <div class="loading-text">
+      <pre class="ascii-art">
+ _____ _          __        _______ _     _____
+|_   _| |        / /       |__   __| |   |_   _|
+  | | | |_ _ __ / /_ _   _    | |  | |__   | |
+  | | | __| '__/ / _` | | |   | |  | '_ \  | |
+ _| |_| |_| | / / (_| | |_|   | |  | | | |_| |_
+|_____|__|_|/_/ \__,_|\__,   |_|  |_| |_|\___/
+                      __/ |
+                     |___/
+      </pre>
     </div>
   </div>
-  <div class="wrapper">
-    <header>
-      <nav>
-        <div class="menu-icon">
-          <i class="fa fa-bars fa-2x"></i>
-        </div>
-        <div class="logo">
-          <a href="#">My Website</a>
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to My Website</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        suscipit, metus non pellentesque dapibus, ex mauris viverra ipsum,
-        vitae tristique eros sem eget nisi. Cras quis velit nec diam
-        elementum eleifend ac in mi.
-      </p>
-    </main>
-  </div>
-  <script src="access.js"></script>
-    <script>
-    function myFunction() {
-  document.getElementById('coming-soon-popup').style.display = 'flex';
-}
-  </script>
-</body>
 
+  <div id="main">
+    <header>
+      <h1>Welcome to My Advanced HTML Site</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>About</h2>
+      <p>This is an example of an advanced HTML site with a custom color scheme and additional features.</p>
+
+      <h2>Content</h2>
+      <p>Here is some content for your site.</p>
+
+      <blockquote class="quote">
+        "The future belongs to those who believe in the beauty of their dreams."
+        <cite>― Eleanor Roosevelt</cite>
+      </blockquote>
+
+      <h3>Image Gallery</h3>
+      <div class="image-gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 <footer>
   <p>Copyright © 2020 - 2023 TheLostMoon. All Rights Reserved.<br>
     <br>
