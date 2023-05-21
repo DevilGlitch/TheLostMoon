@@ -1,0 +1,42 @@
+.carousel {
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item.active {
+    transform: translateZ(0);
+  }
+  
+  .carousel-item.next {
+    transform: translateZ(-1000px);
+  }
+  
+  .carousel-item.prev {
+    transform: translateZ(-1000px) rotateY(180deg);
+  }
+  

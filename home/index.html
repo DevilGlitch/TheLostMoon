@@ -18,7 +18,7 @@
   <meta content="#da004e" data-react-helmet="true" name="theme-color" />
   <link rel="icon" type="image/x-icon" href="../visualAssets/fav.ico">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/cardSlection.css">
+  <link rel="stylesheet" href="../css/gallary3d.css">
   <script>
     window.addEventListener('DOMContentLoaded', function () {
       // Get the loading element
@@ -82,13 +82,22 @@
       </ul>
     </div>
     
-    <h3>Image Gallery</h3>
-      <div class="image-gallery">
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <img src="image3.jpg" alt="Image 3">
-        <img src="image4.jpg" alt="Image 4">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="image4.jpg" alt="Image 4">
+        </div>
       </div>
+    </div>    
 
     <main class="content">
       <h2>About</h2>
@@ -132,6 +141,7 @@
       </p>
     </footer>
   </div>
+  <script src="../js/gallary3dview.js"></script>
 </body>
 
 </html>
