@@ -21,27 +21,27 @@
   <link rel="stylesheet" href="../css/gallary3d.css">
   <script>
     window.addEventListener('DOMContentLoaded', function () {
-    // Get the loading element
-    var loadingElement = document.getElementById('loading');
+      // Get the loading element
+      var loadingElement = document.getElementById('loading');
 
-    // Hide the loading element and show the main content
-    function showContent() {
-      var mainElement = document.getElementById('main');
-      loadingElement.style.display = 'none';
-      mainElement.classList.add('show');
+      // Hide the loading element and show the main content
+      function showContent() {
+        var mainElement = document.getElementById('main');
+        loadingElement.style.display = 'none';
+        mainElement.classList.add('show');
+      }
+
+      // After a delay, fade out the loading element and show the main content
+      setTimeout(function () {
+        loadingElement.classList.add('fade-out');
+        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
+      }, 2000);
+    });
+
+    function toggleMenu() {
+      var menuElement = document.getElementById('menu');
+      menuElement.classList.toggle('show');
     }
-
-    // After a delay, fade out the loading element and show the main content
-    setTimeout(function () {
-      loadingElement.style.opacity = 0;
-      setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
-    }, 2000);
-  });
-
-  function toggleMenu() {
-    var menuElement = document.getElementById('menu');
-    menuElement.classList.toggle('show');
-  }
   </script>
 </head>
 
@@ -87,7 +87,7 @@
           <p>This is a quick synopsis of slide 1.</p>
         </div>
       </div>
-      
+
       <div class="slide">
         <a href="subpage2.html">
           <img src="image2.jpg" alt="Image 2">
@@ -97,7 +97,7 @@
           <p>This is a quick synopsis of slide 2.</p>
         </div>
       </div>
-      
+
       <div class="slide">
         <a href="subpage3.html">
           <img src="image3.jpg" alt="Image 3">
