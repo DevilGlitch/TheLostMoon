@@ -11,6 +11,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    transform: translateZ(-200px);
   }
   
   .carousel-item {
@@ -21,6 +22,7 @@
     height: 100%;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    opacity: 0.7;
   }
   
   .carousel-item img {
@@ -29,14 +31,14 @@
   }
   
   .carousel-item.active {
-    transform: translateZ(0);
+    opacity: 1;
   }
   
   .carousel-item.next {
-    transform: translateZ(-1000px);
+    transform: translateZ(-400px) rotateY(-60deg);
   }
   
   .carousel-item.prev {
-    transform: translateZ(-1000px) rotateY(180deg);
+    transform: translateZ(-400px) rotateY(60deg);
   }
   
