@@ -19,60 +19,7 @@
   <link rel="icon" type="image/x-icon" href="../visualAssets/fav.ico">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/gallary3d.css">
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      // Get the loading element
-      var loadingElement = document.getElementById('loading');
-
-      // Hide the loading element and show the main content
-      function showContent() {
-        var mainElement = document.getElementById('main');
-        loadingElement.style.display = 'none';
-        mainElement.classList.add('show');
-      }
-
-      // After a delay, fade out the loading element and show the main content
-      setTimeout(function () {
-        loadingElement.style.opacity = 0;
-        setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
-      }, 2000);
-    });
-
-    function toggleMenu() {
-  var menuElement = document.getElementById('menu');
-  var overlayElement = document.getElementById('overlay');
-  
-  menuElement.classList.toggle('show');
-  overlayElement.classList.toggle('show'); // Add this line to toggle the overlay
-}
-
-window.addEventListener('DOMContentLoaded', function() {
-    var carouselItems = document.querySelectorAll('.carousel-item');
-    var currentIndex = 0;
-    var timer = setInterval(nextSlide, 3000); // Switch slide every 3 seconds
-  
-    function nextSlide() {
-      carouselItems[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % carouselItems.length;
-      carouselItems[currentIndex].classList.add('active');
-    }
-  
-    function stopTimer() {
-      clearInterval(timer);
-    }
-  
-    function startTimer() {
-      timer = setInterval(nextSlide, 3000);
-    }
-  
-    // Pause timer on mouseenter, resume on mouseleave
-    var carousel = document.querySelector('.carousel');
-    carousel.addEventListener('mouseenter', stopTimer);
-    carousel.addEventListener('mouseleave', startTimer);
-  });
-  
-
-  </script>
+  <script src="../js/acsciiWelcome.js"></script>
 </head>
 
 <body>
@@ -184,6 +131,7 @@ window.addEventListener('DOMContentLoaded', function() {
     </footer>
   </div>
   <script src="../js/gallary3dview.js"></script>
+  <script src="../js/togglemenu.js"></script>
 </body>
 
 </html>
