@@ -5,7 +5,8 @@ body{
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: #da004e;
+  background-color: #0d1117;
+  color: #da004e;
   z-index: 100;
   display: flex;
   justify-content: space-between; /* Add this line to distribute the elements */
@@ -19,7 +20,7 @@ body{
 
 .header-title {
   font-size: 24px;
-  color: #fff;
+  color: #da004e;
   margin: 0;
 }
 
@@ -29,7 +30,8 @@ body{
   left: -200px;
   width: 200px;
   height: 100vh;
-  background-color: #da004e;
+  background-color: #0d1117;
+  color: #da004e;
   z-index: 99;
   transition: left 0.3s ease-in-out;
 }
@@ -115,7 +117,7 @@ main {
 }
 
 footer {
-  background-color: #da004e;
+  background-color: #0d1117;
   padding: 20px;
   text-align: center;
   color: #fff;
