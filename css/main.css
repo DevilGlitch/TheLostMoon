@@ -1,3 +1,7 @@
+body{
+  background-color: #0d1117;
+}
+
 .sticky-header {
   position: sticky;
   top: 0;
