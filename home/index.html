@@ -36,6 +36,11 @@
         setTimeout(showContent, 1000); // Wait for the fade-out animation to complete
       }, 2000);
     });
+
+    function toggleMenu() {
+      var menuElement = document.getElementById('menu');
+      menuElement.classList.toggle('show');
+    }
   </script>
 </head>
 
@@ -55,11 +60,14 @@
   </div>
 
   <div id="main">
-    <header>
-      <h1>TheLostMoon Official Website</h1>
+    <header class="sticky-header">
+      <div class="header-inner">
+        <h1 class="header-title">TheLostMoon Official Website</h1>
+        <button onclick="toggleMenu()">Menu</button>
+      </div>
     </header>
 
-    <nav>
+    <div id="menu" class="popout-menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -67,12 +75,12 @@
         <li><a href="#">Affiliates</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </div>
 
-    <main>
+    <main class="content">
       <h2>About</h2>
       <p>Coming Soon...</p>
-<!--
+      <!--
       <h2>Content</h2>
       <p>Here is some content for your site.</p>
 
@@ -88,26 +96,35 @@
         <img src="image3.jpg" alt="Image 3">
         <img src="image4.jpg" alt="Image 4">
       </div>
-    </main>-->
+      -->
+    </main>
+
     <footer>
-      <p>Copyright © 2020 - 2023 TheLostMoon. All Rights Reserved.<br>
+      <p>
+        Copyright © 2020 - 2023 TheLostMoon. All Rights Reserved.
+        <br>
         <br>
         All content on this website, including text, images, graphics, audio files, and video files, is the property of
-        The Lost Moon and is protected by international copyright laws. Unauthorized use, reproduction, distribution, or
-        modification of any content on this website is strictly prohibited.<br>
+        The Lost Moon and is protected by international copyright laws. Unauthorized use, reproduction, distribution,
+        or modification of any content on this website is strictly prohibited.
+        <br>
         <br>
         The Lost Moon is not responsible for the content or availability of any external websites linked to or from this
         website. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed
         within them. The Lost Moon shall not be liable for any damages or losses arising from the use of or reliance on
-        any external websites linked to or from this website.<br>
+        any external websites linked to or from this website.
+        <br>
         <br>
         The Lost Moon reserves the right to take legal action against any individual or entity that violates these
-        copyright terms. By accessing this website, you acknowledge and agree to abide by these copyright terms.<br>
+        copyright terms. By accessing this website, you acknowledge and agree to abide by these copyright terms.
         <br>
-        If you have any questions about our copyright notice, please contact us at <a
-          href="mailto:support@thelostmoon.net">support@thelostmoon.net</a><br>
         <br>
-        Thank you for visiting https://thelostmoon.net.<br>
+        If you have any questions about our copyright notice, please contact us at
+        <a href="mailto:support@thelostmoon.net">support@thelostmoon.net</a>
+        <br>
+        <br>
+        Thank you for visiting https://thelostmoon.net.
+        <br>
       </p>
     </footer>
   </div>
