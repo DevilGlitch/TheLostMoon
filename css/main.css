@@ -47,6 +47,13 @@ body{
   z-index: 98; /* Set a higher z-index to ensure it appears behind the popout menu */
 }
 
+
+.fa-moon {
+  font-size: 24px;
+  margin-right: 10px; /* Adjust the margin as needed */
+  color: #da004e;
+}
+
 .popout-menu.show {
   left: 0;
 }
