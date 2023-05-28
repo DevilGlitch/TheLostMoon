@@ -7,6 +7,7 @@
     body {
       background-color: #0d1117;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -19,12 +20,28 @@
     .ascii-art {
       font-size: 24px;
     }
+    
+    .return-home {
+      margin-top: 20px;
+    }
+    
+    .return-home a {
+      color: #da004e;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #0d1117;
+      transition: border-color 0.3s ease-in-out;
+    }
+    
+    .return-home a:hover {
+      border-color: #da004e;
+    }
   </style>
 </head>
 
 <body>
   <pre class="ascii-art">
-
     ░█████╗░░█████╗░███╗░░░███╗██╗███╗░░██╗░██████╗░  ░██████╗░█████╗░░█████╗░███╗░░██╗
     ██╔══██╗██╔══██╗████╗░████║██║████╗░██║██╔════╝░  ██╔════╝██╔══██╗██╔══██╗████╗░██║
     ██║░░╚═╝██║░░██║██╔████╔██║██║██╔██╗██║██║░░██╗░  ╚█████╗░██║░░██║██║░░██║██╔██╗██║
@@ -32,6 +49,10 @@
     ╚█████╔╝╚█████╔╝██║░╚═╝░██║██║██║░╚███║╚██████╔╝  ██████╔╝╚█████╔╝╚█████╔╝██║░╚███║
     ░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░  ╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚══╝
   </pre>
+  
+  <div class="return-home">
+    <a href="../home/">Return Home</a>
+  </div>
 </body>
 
 </html>
