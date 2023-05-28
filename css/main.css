@@ -2,6 +2,21 @@ body{
   background-color: #0d1117;
 }
 
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to horizontally center the elements */
+  padding: 3px;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #da004e;
+  margin: 0;
+  text-align: center; /* Add this line to center the text within the header */
+}
+
+/* Remove the 'justify-content: space-between;' from .sticky-header */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -10,19 +25,6 @@ body{
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Add this line to distribute the elements */
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  padding: 3px;
-}
-
-.header-title {
-  font-size: 24px;
-  color: #da004e;
-  margin: 0;
 }
 
 .popout-menu {
