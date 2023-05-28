@@ -1,24 +1,19 @@
-body{
+body {
   background-color: #0d1117;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
 }
 
-h1{
-  color: #fff;
-}
-
-h2{
-  color: #fff;
-}
-
-h3{
+h1, h2, h3 {
   color: #fff;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: center; /* Add this line to horizontally center the elements */
+  justify-content: center;
   padding: 3px;
 }
 
@@ -26,10 +21,9 @@ h3{
   font-size: 24px;
   color: #da004e;
   margin: 0;
-  text-align: center; /* Add this line to center the text within the header */
+  text-align: center;
 }
 
-/* Remove the 'justify-content: space-between;' from .sticky-header */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -58,15 +52,14 @@ h3{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as desired */
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 98; /* Set a higher z-index to ensure it appears behind the popout menu */
+  z-index: 98;
 }
-
 
 .fa-moon {
   font-size: 24px;
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
   color: #da004e;
 }
 
@@ -151,7 +144,7 @@ footer {
 }
 
 .menu-button {
-  margin-left: 10px; /* Adjust the margin as needed */
+  margin-left: 10px;
 }
 
 #loading {
@@ -166,12 +159,12 @@ footer {
   justify-content: center;
   opacity: 1;
   transition: opacity 1s ease-in;
-  z-index: 9999; /* Ensure it appears above other elements */
+  z-index: 9999;
 }
 
 #loading.fade-out {
   opacity: 0;
-  z-index: -1; /* Move it below other elements after fade-out */
+  z-index: -1;
 }
 
 .loading-text {
@@ -186,10 +179,10 @@ footer {
 }
 
 #main {
-  opacity: 0; /* Hide the main content by default */
+  opacity: 0;
   transition: opacity 1s ease-in;
 }
 
 #main.show {
-  opacity: 1; /* Show the main content when the 'show' class is applied */
+  opacity: 1;
 }
